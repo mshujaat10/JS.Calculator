@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="display">
+                <span id="hist"></span>
+                <input type="text" placeholder="0" id="screen" name="screen" />
+                <button value="C" type="submit" class="rotate reset material-symbols-outlined">
+                    replay
+                </button>
+            </div>
+            <div class="buttons">
+                <div class="row">
+                    <button class="operands" value="7">7</button>
+                    <button class="operands" value="8">8</button>
+                    <button class="operands" value="9">9</button>
+                    <button class="operators" value="*">X</button>
+                </div>
+
+                <div class="row">
+                    <button class="operands" value="4">4</button>
+                    <button class="operands" value="5">5</button>
+                    <button class="operands" value="6">6</button>
+                    <button class="operators" value="-">-</button>
+                </div>
+
+                <div class="row">
+                    <button class="operands" value="1">1</button>
+                    <button class="operands"value="2">2</button>
+                    <button class="operands" value="3">3</button>
+                    <button class="operators" value="+">+</button>
+                </div>
+
+                <div class="row">
+                    <button class="operands" value="0">0</button>
+                    <button class="operands" value=".">.</button>
+                    <button class="operators" value="/">/</button>
+                    <button id="equal" value="=" class="operators">=</button>
+                </div>
+            </div>
+        </div>
+        <input type="checkbox" id="switch"  id ="btn" onclick="background()"  /><label for="switch"></label>
+    </div>
+ 
+
+
+    <script src="script.js"></script>
+</body>
+</html>
